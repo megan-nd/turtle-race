@@ -131,10 +131,11 @@ def reset():
 
 def again():
     while True:
-        print('Press enter to play again')
-        input()
+        print('A new race will start in 5 seconds')
+        time.sleep(5)
         reset()
         turtle_race()
+        again()
 
 def turtle_race():
     race_start()
